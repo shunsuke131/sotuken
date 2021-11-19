@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 5% auto;
+    /* background-color: #eee6ff; */
+    background-color: #fdd160;
+    /* background-color: #f5a645; */
+
+}
+
+/* タイトルのcss */
+.tytle {
+    font-size: 160%;
+    background-image: url("../img/font2.jpg");
+    /* 切り抜きたい画像 */
+    -webkit-background-clip: text;
+    /* 画像を文字で切り抜く指定 */
+    color: transparent;
+}
+
+/* ヘッダーのcss */
+header {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 1px 1px 5px #000;
+    margin-bottom: 30px;
+    background-color: #ffff;
+}
+
+header nav {
+    margin-left: auto;
+    list-style: none;
+
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header li {
+    border-right: 2px solid #333;
+    padding: 10px; 
+  }
+
+header  li+ li {
+    border-left: 0;
+    border-right: 2px solid #333;
+    
+  }
+
+header ul li {
+    margin-left: 20px;
+    list-style: none;
+}
+
+.li2 {
+    list-style: none;
+    background-color: black;
+    color: white;
+
+}
+
+/* カーソルを合わせた時のcss */
+.headers {
+    color: black;
+}
+
+.headers2 {
+    color: black;
+}
+
+.headers3 {
+    color: #ffff;
+}
+
+.headers3:hover {
+    color: #f25042;
+
+}
+
+.headers2:hover {
+    color: #f25042;
+
+}
+
+.headers:hover {
+    color: #f25042;
+}
+
+.rame1:hover {
+    color: #FF0000;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* フッターのcss */
+footer {
+    min-height: 100%;
+}
+
+.sfooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: black;
+    z-index: 10;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin: auto 0;
+}
+
+small {
+    width: 100%;
+    margin: 50px;
+    text-align: center;
+}
+
+
+.sub {
+    font-size: 5px;
+    display: inline;
+}

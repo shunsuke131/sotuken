@@ -1,0 +1,163 @@
+/* ジャンルのcss */
+#wrapper nav {
+    position: absolute;
+    top: 80px;
+    left: -300px;
+    width: 300px;
+    height: 490px;
+    padding-top: 50px;
+    background: rgba(33, 33, 33, .9);
+    font-size: 16px;
+    box-sizing: content-box;
+    /*要素の幅が、marginとpaddingを含めた幅になる*/
+    z-index: 1;
+    /*重なりの順序の指定(今回の場合、上から2番目に配置)*/
+    transition: all 500ms
+        /*アニメーションの時間設定*/
+}
+
+#wrapper nav ul li {
+    padding: 10px 10px;
+    list-style: none;
+}
+
+#wrapper nav ul li a {
+    text-decoration: none;
+    color: #ddd
+}
+
+#wrapper h1 {
+    color: rgb(153, 0, 0);
+}
+
+#wrapper .btn-gnavi {
+    position: absolute;
+    /*要素の位置を固定*/
+    top: 145px;
+    left: 20px;
+    width: 30px;
+    height: 24px;
+    z-index: 2;
+    /*重なりの順序の指定(今回の場合、一番上に配置(三本線/矢印部分))*/
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms
+}
+
+#wrapper .btn-gnavi span {
+    position: absolute;
+    /* 親を基準に絶対位置を指定(上下左右の指定がない場合は0px) */
+    width: 30px;
+    height: 4px;
+    background: #ffff;
+    border-radius: 10px;
+    transition: all 400ms
+}
+
+.border-radius {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 100px;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    margin-left: 25px;
+    top: 135px;
+}
+
+#wrapper .btn-gnavi span:nth-child(1) {
+    top: 0
+}
+
+#wrapper .btn-gnavi span:nth-child(2) {
+    top: 10px
+}
+
+#wrapper .btn-gnavi span:nth-child(3) {
+    top: 20px
+}
+
+#wrapper .btn-gnavi.open {
+    transform: rotate(180deg);
+    /*矢印を反転*/
+}
+
+#wrapper .btn-gnavi.open span {
+    background: #fff
+}
+
+#wrapper .btn-gnavi.open span:nth-child(1) {
+    width: 24px;
+    /* 一番上の線を変形して、矢印を作る */
+    transform: translate(-35px, 17px) rotate(45deg)
+}
+
+#wrapper .btn-gnavi.open span:nth-child(2) {
+    width: 30px;
+    /* 一番上の線を変形して、矢印を作る */
+    transform: translate(-30px, 0px) rotate(180deg)
+}
+
+
+#wrapper .btn-gnavi.open span:nth-child(3) {
+    width: 24px;
+    /* 一番下の線を変形して、矢印を作る */
+    transform: translate(-35px, -17px) rotate(-45deg)
+}
+
+
+.menu {
+    display: flex;
+}
+
+.menu div{
+    width: 50%;
+    margin-top:80px;
+    margin-right: 25px;
+}
+
+.box1 {
+    display: flex;
+    width: 600pt;
+    height: 400px;
+    color: #5d627b;
+    background: white;
+    margin-left: 280px;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box1-sub {
+    padding: 0.5em 1em;
+    margin: 11em 0;
+    font-weight: bold;
+    color: #6091d3;
+    /*文字色*/
+    background: rgb(221, 218, 218);
+    border: solid 3px #fff;
+    /*線*/
+    border-radius: 10px;
+    /*角の丸み*/
+}
+
+.mainImage{
+    border: 2px solid #333;
+   }
+    
+   .thumb{position: relative;
+    top: 300px;
+    left: -250px;
+    border: 2px solid #333;
+   }
+
+.box1 p{
+    margin-top: 5rem;
+    font-size: 80%;
+    padding-left: 5px;
+}
+
+.box1 h2 {
+padding: 10px;
+}
+

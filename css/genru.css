@@ -1,0 +1,33 @@
+figure {
+    width: 250px;
+    position: relative;
+  }
+  
+  figure img {
+    width: 250px;
+    vertical-align: top;
+    margin-left: 150px;
+  }
+  
+  figure figcaption {
+    position: absolute;
+    display: flex;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    margin-left: 150px;
+    align-items: center;
+    justify-content: center;
+  }
+figure a {
+    color: #ffff;
+    font-size: 30px;
+}
+
+
+  .decorator {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  
+  
