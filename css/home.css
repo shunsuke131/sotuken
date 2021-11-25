@@ -1,0 +1,114 @@
+
+
+/* 画像のcss */
+.album {
+    margin: auto;
+    background-color: #eee6ff;
+    position: relative;
+}
+
+.album img {
+    display: flex;
+    animation-name: album;
+    -webkit-animation-name: album;
+    animation-duration: 10s;
+    -webkit-animation-duration: 10s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0;
+    flex-basis: 90%;
+
+}
+
+.album .img1 {
+    width: 99%;
+    height: 350px;
+    display: block;
+    margin: 10px 5px;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+
+.album .img2 {
+    width: 99%;
+    height: 350px;
+    animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+    position: absolute;
+    display: block;
+    margin: 10px 5px;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+
+}
+
+
+@keyframes album {
+    0% {
+        opacity: 0;
+    }
+
+    12.5% {
+        opacity: 1;
+    }
+
+    37.5% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes album {
+    0% {
+        opacity: 0;
+    }
+
+    12.5% {
+        opacity: 1;
+    }
+
+    37.5% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+h2 {
+    margin-top: 500px;
+    padding: 20px;
+}
+
+.questionnaire a{
+    position: fixed;
+    text-decoration: none;
+    padding: 0.5em 2em;
+    margin: 26em 0;
+    top: 145px;
+    right: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    /*文字色*/
+    background: rgb(0, 0, 0);
+    border: solid 3px #fff;
+    /*線*/
+    border-radius: 20px;
+    /*角の丸み*/
+}
+
+@media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+    
+}
+
