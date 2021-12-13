@@ -1,6 +1,85 @@
-body,#wrapper{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
+.area {
+  width: 1300px;
+  margin: 0px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+#btn_area {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#btn_area .btn_radio {
+  width: 360px;
+  margin: 0 auto;
+}
+
+.tab_class {
+  width: 180px;
+  height: 50px;
+  background-color: darkgrey;
+  line-height: 50px;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  float: left;
+  order: -1;
+  /* margin: 0 220px; */
+}
+
+input[name="tab_name"] {
+  display: none;
+}
+
+input:checked + .tab_class {
+  background-color: cadetblue;
+  color: aliceblue;
+}
+
+.content_class {
+  display: none;
+  width: 100%;
+}
+
+input:checked + .tab_class + .content_class {
+  display: block;
+}
+
+.area2 {
+  width: 1300px;
+  margin: 0px;
+  flex-wrap: wrap;
+  display: flex;
+  position: relative;
+  vertical-align: middle;
+  align-items: flex-start;
+}
+
+.tab_class2 {
+  width: 180px;
+  height: 50px;
+  background-color: darkgrey;
+  line-height: 50px;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  float: left;
+  order: -1;
+  /* margin: 0 220px; */
+}
+
+input:checked + .tab_class2 {
+  background-color: cadetblue;
+  color: aliceblue;
+}
+
+input:checked + .tab_class2 + .content_class {
+  display: block;
+}
+* {
+  padding: 0px;
+}

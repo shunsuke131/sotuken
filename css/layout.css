@@ -14,7 +14,7 @@ body {
     background-color: #f5a645;
     background-image: url("../img/mori.jpg");
     /* background-color:rgba(255, 239, 119, 0.926); */
-    background-blend-mode:lighten;
+    background-blend-mode: lighten;
 
 }
 
@@ -30,6 +30,7 @@ body {
 
 /* ヘッダーのcss */
 header {
+
     display: flex;
     height: 80px;
     align-items: center;
@@ -37,6 +38,8 @@ header {
     box-shadow: 1px 1px 5px #000;
     margin-bottom: 30px;
     background-color: #ffff;
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", "Yu Gothic", "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo";
+    font-size: 16px;
 }
 
 header nav {
@@ -52,14 +55,14 @@ header ul {
 
 header li {
     border-right: 2px solid #333;
-    padding: 10px; 
-  }
+    padding: 10px;
+}
 
-header  li+ li {
+header li+li {
     border-left: 0;
     border-right: 2px solid #333;
-    
-  }
+
+}
 
 header ul li {
     margin-left: 20px;
@@ -114,9 +117,9 @@ footer {
 
 .sfooter {
     background-color: #000;
-    height: 50px;
+    height: 60px;
     color: white;
-    text-align: center;
+
     font-weight: bold;
     margin-bottom: 0;
     margin: auto 0;
@@ -124,11 +127,47 @@ footer {
 
 small {
     width: 100%;
-    text-align: center;
+    
 }
 
 
 .sub {
     font-size: 5px;
     display: inline;
+}
+
+
+
+header a {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    transform: translate(-100%, 0);
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+    content: "";
+}
+
+header a:hover:after {
+    transform: translate(0, 0);
+}
+
+headerli {
+    list-style: none;
+    margin: 10px 0;
+}
+
+
+.icon{
+    margin-left: 700px;
 }

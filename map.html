@@ -3,15 +3,42 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>マップ</title>
-    <link rel="stylesheet" href="../sotuken/css/layout.css">
-    <link rel="stylesheet" href="../sotuken/css/map.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/map.css">
+    <style>
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #map {
+            width: 100%;
+            height: 2000%;
+        }
+
+        #map2 {
+            width: 100%;
+            height: 2000%;
+        }
+    </style>
 </head>
+<!-- <body onload="init()"> -->
+</head>
+
+<!-- <body onload="init()"> -->
 
 <body>
     <header>
         <h1 class="tytle">盛岡喰種</h1>
-        <p class ="sub">morioka ghuol</p>
+        <p class="sub">morioka ghoul</p>
         <nav id=main>
 
             <ul>
@@ -19,26 +46,87 @@
                 <li> <a href="home.html" style="text-decoration: none" class="headers">ホーム</a>
                 </li>
 
-                <li> <a href="genru.html"  style="text-decoration: none"class="headers2">ジャンル</a>
+                <li> <a href="genru.html" style="text-decoration: none" class="headers2">ジャンル</a>
                 </li>
 
-                <li> <a href="map.html"  style="text-decoration: none"class="headers2">マップ</a>
+                <li> <a href="map.html" style="text-decoration: none" class="headers2">マップ</a>
                 </li>
 
                 <li class="li2">
-                    <a href="chatbot.html"  style="text-decoration: none"class="headers3">チャットボットで質問</a>
+                    <a href="chatbot.html" style="text-decoration: none" class="headers3">チャットボットで質問</a>
                 </li>
             </ul>
         </nav>
     </header>
+    <div id="btn_area">
+        <div class="btn_radio">
+            <input type="radio" name="tab_name" id="tab1" checked>
+            <label class="tab_class" for="tab1">飲食店マップ</label>
+            <input type="radio" name="tab_name" id="tab2">
+            <label class="tab_class2" for="tab2">駐車場マップ</label>
+        </div>
+    </div>
+    <div class="area" id="map_area1">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1hYgLwvVd4mMnSOTYPHVJJUvW0FBb8EjR" width="900"
+            height="550"></iframe>
+        <div class="content_class">
+            <!-- <body onload="getMyplace()"> -->
+            <div id="result"></div>
+            <!-- <button onclick="getMyplace()">現在地</button> -->
+            <div id="map"></div>
+        </div>
+    </div>
+    <div class="area2" id="map_area2">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1D2XJJBs5z0DEUI5aa2HDG85eLUgW3imA&z=12" width="900"
+            height="550"></iframe>
+        <div class="content_class">
+            <!-- <body onload="getMyplace()"> -->
+            <div id="result2"></div>
+            <!-- <button onclick="getMyplace()">現在地</button> -->
+            <div id="map2"></div>
+        </div>
+    </div>
+    <script>
+        let map_area1 = document.getElementById('map_area1');
+        let map_area2 = document.getElementById('map_area2');
+        map_area1.style.display = 'block';
+        map_area2.style.display = 'none';
 
+        let tab_check1 = document.getElementById('tab1');
+        tab_check1.addEventListener('click', function () {
+            if (tab_check1.checked) {
+                map_area1.style.display = 'block';
+                map_area2.style.display = 'none';
+            } else {
+                map_area1.style.display = 'none';
+                map_area2.style.display = 'block';
+            }
+        });
+
+        let tab_check2 = document.getElementById('tab2');
+        tab_check2.addEventListener('click', function () {
+            if (tab_check2.checked) {
+                map_area1.style.display = 'none';
+                map_area2.style.display = 'block';
+            } else {
+                map_area1.style.display = 'block';
+                map_area2.style.display = 'none';
+            }
+        });
+    </script>
     <footer>
         <div class="sfooter">
             <small>2021 teamAS</small>
-        </div>
-    </footer>
- 
+            <div class="icon">
+                <a href="https://twitter.com/morioka_ghoul?s=20"><img src="../img/ツイッターアイコン.png" width="30" height="30"></a> <a
+                    href="https://www.instagram.com/morioka_ghoul/"><img src="../img/insta.png" width="30" height="30"></a>
+            </div>
     
+    
+        </div>
+
+    </footer>
+
 </body>
 
 </html>
