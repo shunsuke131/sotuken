@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 figure {
     width: 250px;
     position: relative;
@@ -31,3 +32,99 @@ figure a {
   
   
   
+=======
+body,
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+table {
+  border-collapse: initial;
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+table td {
+  width: 250px;
+}
+
+
+.jyan1 {
+  display: flex;
+  width: 250px;
+  position: relative;
+  margin: 0;
+}
+
+.jyan1 img {
+  width: 250px;
+  height: 150px;
+  /* margin-left: 150px; */
+}
+
+.jyan1 figcaption {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* margin-left: 150px; */
+  align-items: center;
+  justify-content: center;
+}
+
+.jyan1 a {
+  color: #ffff;
+  font-size: 30px;
+}
+
+.jyan2 {
+  display: flex;
+  width: 250px;
+  position: relative;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.jyan2 img {
+  width: 250px;
+  height: 150px;
+  /* margin-left: 150px; */
+}
+
+.jyan2 figcaption {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* margin-left: 150px; */
+  align-items: center;
+  justify-content: center;
+}
+
+.jyan2 a {
+  color: #ffff;
+  font-size: 30px;
+}
+
+
+.decorator {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.all {
+  padding: 16px;
+  color: white;
+  transition: all 0.2s;
+}
+
+.all:hover {
+  transform: scale(1.3, 1.3);
+}
+
+
+
+>>>>>>> kuzumaki

@@ -10,8 +10,16 @@ body {
     text-align: center;
     margin-bottom: 5% auto;
     /* background-color: #eee6ff; */
+<<<<<<< HEAD
     background-color: #fdd160;
     /* background-color: #f5a645; */
+=======
+    /* background-color: #fdd160; */
+    background-color: #f5a645;
+    background-image: url("../img/mori.jpg");
+    /* background-color:rgba(255, 239, 119, 0.926); */
+    background-blend-mode: lighten;
+>>>>>>> kuzumaki
 
 }
 
@@ -27,6 +35,10 @@ body {
 
 /* ヘッダーのcss */
 header {
+<<<<<<< HEAD
+=======
+
+>>>>>>> kuzumaki
     display: flex;
     height: 80px;
     align-items: center;
@@ -34,6 +46,11 @@ header {
     box-shadow: 1px 1px 5px #000;
     margin-bottom: 30px;
     background-color: #ffff;
+<<<<<<< HEAD
+=======
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", "Yu Gothic", "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo";
+    font-size: 16px;
+>>>>>>> kuzumaki
 }
 
 header nav {
@@ -49,6 +66,7 @@ header ul {
 
 header li {
     border-right: 2px solid #333;
+<<<<<<< HEAD
     padding: 10px; 
   }
 
@@ -57,6 +75,16 @@ header  li+ li {
     border-right: 2px solid #333;
     
   }
+=======
+    padding: 10px;
+}
+
+header li+li {
+    border-left: 0;
+    border-right: 2px solid #333;
+
+}
+>>>>>>> kuzumaki
 
 header ul li {
     margin-left: 20px;
@@ -105,6 +133,7 @@ header ul li {
 
 /* フッターのcss */
 footer {
+<<<<<<< HEAD
     min-height: 100%;
 }
 
@@ -116,6 +145,17 @@ footer {
     color: black;
     z-index: 10;
     text-align: center;
+=======
+    margin-top: auto;
+
+}
+
+.sfooter {
+    background-color: #000;
+    height: 60px;
+    color: white;
+
+>>>>>>> kuzumaki
     font-weight: bold;
     margin-bottom: 0;
     margin: auto 0;
@@ -123,12 +163,55 @@ footer {
 
 small {
     width: 100%;
+<<<<<<< HEAD
     margin: 50px;
     text-align: center;
+=======
+    
+>>>>>>> kuzumaki
 }
 
 
 .sub {
     font-size: 5px;
     display: inline;
+<<<<<<< HEAD
+=======
+}
+
+
+
+header a {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    transform: translate(-100%, 0);
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+    content: "";
+}
+
+header a:hover:after {
+    transform: translate(0, 0);
+}
+
+headerli {
+    list-style: none;
+    margin: 10px 0;
+}
+
+
+.icon{
+    margin-left: 700px;
+>>>>>>> kuzumaki
 }
