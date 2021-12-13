@@ -1,11 +1,7 @@
 
 :root {
     --peekobot-height: 80vh;
-<<<<<<< HEAD
-    --peekobot-avatar: url("https://img.altema.jp/sumaburaswitch/uploads/2018/12/2018y12m09d_1610550853.jpg");
-=======
     --peekobot-avatar: url("../img/aoi.jpg");
->>>>>>> kuzumaki
   }
   
   #peekobot-container {
@@ -20,11 +16,8 @@
     width: 50%;
   margin: 0 0 0 auto;
   margin-left: 300px;
-<<<<<<< HEAD
-=======
   margin-top: 40px;
   margin-bottom: 40px;
->>>>>>> kuzumaki
   }
   
   .chat-response,
@@ -38,11 +31,7 @@
     line-height: 1.4;
     color: black;
     width: 80%;
-<<<<<<< HEAD
-    margin-bottom: 0.5rem;
-=======
     margin-bottom: 1rem;
->>>>>>> kuzumaki
   }
   .chat-response {
     margin-left: 22px;
